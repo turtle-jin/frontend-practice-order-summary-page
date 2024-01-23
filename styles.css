@@ -32,7 +32,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+    box-shadow: 0 1px 40px 1px hsl(243, 47%, 78%);
 
 }
 
