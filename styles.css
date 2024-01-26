@@ -3,10 +3,74 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-color: hsl(225, 100%, 94%);
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;   
+    /* border: solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
     
+       
 }
 
+/* containers */
+.header-img, 
+.header-img img, 
+.summary, 
+.plan-container, 
+.payment, 
+.cancel {
+    width: 380px;
+    background-color: white;
+    flex: 0 0 auto;
+}
+.header-img {
+    /* border: solid; */
+    height: 185px;
+    margin-top: 80px;
+    margin-bottom: 0;
+
+    border-radius: 20px 20px 0 0;
+}
+
+.header-img img {
+    
+    border-radius: 20px 20px 0 0;
+}
+
+.summary {
+    margin-top: 0;
+    flex: 0;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.summary div {
+    /* border: solid green; */
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 0;
+}
+
+.plan-container .greybox {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    gap: 20px;
+}
+
+.leftside, 
+.middle, 
+.right {
+    padding: 10px;
+}
+
+/* fonts and sizes */
 p {
     font-size: 13px;
     font-weight: 500;
@@ -14,57 +78,16 @@ p {
     color: hsl(224, 23%, 55%);
 }
 
+h2 {
+    font-weight: 900;
+}
 .payment a {
     color: white;
     font-size: 12px;
     font-weight: 700;
     text-decoration: none;
 }
-.container {
-    text-align: center;
-    /* border: solid; */
-    margin: 100px 390px;
-    height: 600px; 
-    width: auto;
-    border-radius: 20px;
-    box-sizing: border-box;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 0 1px 40px 1px hsl(243, 47%, 78%);
 
-}
-
-.header-img img {
-    height: 100%;
-    width: 100%;
-    /* object-fit: contain; */
-    border-radius: 10px 10px 0 0;
-    
-   
-}
-
-.plan-container {
-    background-color: hsl(225, 100%, 98%);
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-shrink: none;
-    
-    /* padding-left: 20px; */
-    /* padding-right: 20px; */
-    
-    
-}
-
-.left {
-    display: flex;
-    align-items: center;
-    gap: 10px;    
-    
-}
 
 .right a {
     color: hsl(245, 75%, 52%);
@@ -72,16 +95,7 @@ p {
     font-weight: 900;
 }
 
-.summary, .plan-container, .payment, .cancel {
-    margin: 0 30px;
-    /* border: solid; */
-    padding: 0 20px;
-}
 
-.summary p {
-    /* border: solid; */
-    margin-bottom: 0;
-}
 
 .payment {
     background: hsl(245, 75%, 52%);
@@ -93,7 +107,7 @@ p {
 
 .cancel p {
     font-weight: 700;
-    margin-bottom: 30px;
+    
 }
 
 
