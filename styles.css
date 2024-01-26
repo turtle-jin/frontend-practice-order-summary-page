@@ -21,13 +21,13 @@ body {
 .plan-container, 
 .payment, 
 .cancel {
-    width: 380px;
+    width: 350px;
     background-color: white;
     flex: 0 0 auto;
 }
 .header-img {
     /* border: solid; */
-    height: 185px;
+    height: 180px;
     margin-top: 80px;
     margin-bottom: 0;
 
@@ -41,7 +41,6 @@ body {
 
 .summary {
     margin-top: 0;
-    flex: 0;
     text-align: center;
     padding-top: 15px;
 }
@@ -57,20 +56,71 @@ body {
     background-color: hsl(225, 100%, 98%);
     border-radius: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-left: 40px;
     margin-right: 40px;
-    gap: 20px;
+    
 }
 
 .leftside, 
-.middle, 
-.right {
-    padding: 10px;
+.rightside {
+    padding: 18px;
+}
+
+
+.leftside {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+}
+
+.payment {
+    /* border: solid black; */
+    text-align: center;
+    
+}
+
+.payment .bluebox {
+    background: hsl(245, 75%, 52%);
+    border-radius: 10px;
+    box-shadow: 0 8px 10px hsl(259, 18%, 69%);
+    margin: 18px 40px;
+    padding: 9px
+}
+.payment a {  
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+}
+
+.cancel {
+    /* border: solid orange; */
+    text-align: center;
+    padding-bottom: 30px;
+    border-radius: 0 0 20px 20px;
+    
+}
+
+.attribution {
+    margin-top: 60px;
 }
 
 /* fonts and sizes */
+
+#price {
+    font-size: 13px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+#plan-title {
+    font-weight: 900;
+    font-size: 13px;
+}
+
 p {
     font-size: 13px;
     font-weight: 500;
@@ -81,15 +131,9 @@ p {
 h2 {
     font-weight: 900;
 }
-.payment a {
-    color: white;
-    font-size: 12px;
-    font-weight: 700;
-    text-decoration: none;
-}
 
 
-.right a {
+.rightside a {
     color: hsl(245, 75%, 52%);
     font-size:12px;
     font-weight: 900;
@@ -97,16 +141,11 @@ h2 {
 
 
 
-.payment {
-    background: hsl(245, 75%, 52%);
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 8px 10px hsl(259, 18%, 69%);
-}
-
-.cancel p {
+.cancel a {
     font-weight: 700;
+    color: hsl(224, 23%, 55%);
+    font-size: 13px;
+    text-decoration: none;
     
 }
 
